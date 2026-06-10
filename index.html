@@ -1,39 +1,131 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
+
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
 <title>Ruta de Productividad Lean</title>
+
 <style>
+
 body{
-font-family: Arial, sans-serif;
-max-width: 800px;
-margin: auto;
-padding: 40px;
+margin:0;
+font-family:Arial,sans-serif;
+background:#f5f5f5;
 }
-a{
-display:block;
-padding:15px;
-margin:10px 0;
-background:#0B5ED7;
+
+.hero{
+
+position:relative;
+
+height:100vh;
+
+background-image:url("img/portada-ruta.png");
+
+background-size:cover;
+
+background-position:center top;
+
+background-repeat:no-repeat;
+
+}
+
+.botones{
+
+position:absolute;
+
+bottom:80px;
+
+left:50%;
+
+transform:translateX(-50%);
+
+display:flex;
+
+gap:20px;
+
+flex-wrap:wrap;
+
+justify-content:center;
+
+}
+
+.btn{
+
+background:#007a3d;
+
 color:white;
+
 text-decoration:none;
-border-radius:6px;
+
+padding:18px 35px;
+
+border-radius:10px;
+
+font-size:1.1rem;
+
+font-weight:bold;
+
+transition:.3s;
+
+box-shadow:0 4px 10px rgba(0,0,0,.2);
+
 }
+
+.btn:hover{
+
+background:#00994d;
+
+transform:translateY(-3px);
+
+}
+
+@media(max-width:768px){
+
+.hero{
+
+height:70vh;
+
+}
+
+.btn{
+
+width:260px;
+
+text-align:center;
+
+}
+
+}
+
 </style>
+
 </head>
+
 <body>
 
-<h1>Ruta de Productividad Lean</h1>
+<div class="hero">
 
-<p>Seleccione una cartilla:</p>
+<div class="botones">
 
-<a href="Hoja_Ruta_Comercio.html">
-Cartilla Comercio
+<a
+href="Hoja_Ruta_Comercio.html"
+class="btn">
+📦 Cartilla Comercio
 </a>
 
-<a href="Hoja_Ruta_Servicios.html">
-Cartilla Servicios
+<a
+href="Hoja_Ruta_Servicios.html"
+class="btn">
+🛠️ Cartilla Servicios
 </a>
+
+</div>
+
+</div>
 
 </body>
+
 </html>
